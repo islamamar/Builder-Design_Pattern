@@ -15,7 +15,4 @@ public interface Builder {
     void setEducation(Education education);
     void setBiography(Biography biography);
     
-    
-    
-    
 }

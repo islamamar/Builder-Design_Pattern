@@ -10,5 +10,24 @@ package builderdesignpattern;
  * @author 123456789
  */
 public class Specialization {
+     private int SpcializatioYear;  
+     private int StartYear; 
+
+    public Specialization(int SpcializatioYear, int StartYear) {
+        this.SpcializatioYear = SpcializatioYear;
+        this.StartYear = StartYear;
+    }
+
+    public int getSpcializatioYear() {
+        return SpcializatioYear;
+    }
+
+    public int getStartYear() {
+        return StartYear;
+    }
+     
+     
+     
+     
     
 }

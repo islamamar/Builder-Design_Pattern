@@ -10,41 +10,40 @@ package builderdesignpattern;
  * @author 123456789
  */
 public class Address { 
-     private String FirstName ; 
-     private  String LastName; 
-     private  String EmailAddress; 
-     private String Website;
-     private String phoneNumber ; 
+     private String Country ; 
+     private  String State; 
+     private  String City; 
+     private String Street;
+     private String PostalCode ; 
 
-    public Address(String FirstName, String LastName, String EmailAddress, String Website, String phoneNumber) {
-        this.FirstName = FirstName;
-        this.LastName = LastName;
-        this.EmailAddress = EmailAddress;
-        this.Website = Website;
-        this.phoneNumber = phoneNumber;
+    public Address(String Country, String State, String City, String Street, String PostalCode) {
+        this.Country = Country;
+        this.State = State;
+        this.City = City;
+        this.Street = Street;
+        this.PostalCode = PostalCode;
     }
 
-    public String getFirstName() {
-        return FirstName;
+    public String getCountry() {
+        return Country;
     }
 
-    public String getLastName() {
-        return LastName;
+    public String getState() {
+        return State;
     }
 
-    public String getEmailAddress() {
-        return EmailAddress;
+    public String getCity() {
+        return City;
     }
 
-    public String getWebsite() {
-        return Website;
+    public String getStreet() {
+        return Street;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getPostalCode() {
+        return PostalCode;
     }
-     
-     
+
      
              
     
