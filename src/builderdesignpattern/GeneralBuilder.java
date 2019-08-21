@@ -10,33 +10,29 @@ package builderdesignpattern;
  * @author 123456789
  */
 public class GeneralBuilder implements Builder{ 
-      private Personal personal;
+     private Personal personal;
     private Address address;
     private Education education ; 
     private Biography biography ; 
    
 
     @Override
-    public void setPerson(Personal personal) {
-        //To change body of generated methods, choose Tools | Templates. 
+    public void setPerson(Personal personal) {     
        this.personal= personal ; 
     }
 
     @Override
-    public void setAddress(Address address) {
-       //To change body of generated methods, choose Tools | Templates. 
+    public void setAddress(Address address) {       
        this.address = address; 
     }
 
     @Override
-    public void setEducation(Education education) {
-         //To change body of generated methods, choose Tools | Templates. 
+    public void setEducation(Education education) {        
          this.education = education ; 
     }
 
     @Override
-    public void setBiography(Biography biography) {
-        //To change body of generated methods, choose Tools | Templates. 
+    public void setBiography(Biography biography) {        
         this.biography= biography;
     } 
    public General getResult() {

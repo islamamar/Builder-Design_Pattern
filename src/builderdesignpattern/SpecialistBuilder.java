@@ -13,7 +13,8 @@ public class SpecialistBuilder  implements Builder {
      private Personal personal;
     private Address address;
     private Education education ; 
-    private Biography biography ; 
+    private Biography biography ;  
+    private  Specialization specialization ; 
 
     @Override
     public void setPerson(Personal personal) {       
@@ -34,6 +35,12 @@ public class SpecialistBuilder  implements Builder {
     public void setBiography(Biography biography) {
        this.biography= biography;  //To change body of generated methods, choose Tools | Templates.
     }
-    
+      public void setSpecialization(Specialization specialization) {  
+          this.specialization = specialization ; 
+      }   
+      
+       public Specialist getResult() {
+        return new Specialist(personal, address, education, biography,specialization);
+    }
     
 }

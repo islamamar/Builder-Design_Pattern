@@ -9,18 +9,20 @@ package builderdesignpattern;
  *
  * @author 123456789
  */
-public class General {
+public class Specialist  { 
        private Personal personal;
     private Address address;
     private Education education ; 
-    private Biography biography ; 
+    private Biography biography ;  
+    private  Specialization specialization ; 
 
-    public General(Personal personal, Address address, Education education, Biography biography) {
+    public Specialist(Personal personal, Address address, Education education, Biography biography, Specialization specialization) {
         this.personal = personal;
         this.address = address;
         this.education = education;
         this.biography = biography;
-    } 
+        this.specialization = specialization;
+    }
 
     public Personal getPersonal() {
         return personal;
@@ -37,13 +39,15 @@ public class General {
     public Biography getBiography() {
         return biography;
     }
- 
-    
+
+    public Specialization getSpecialization() {
+        return specialization;
+    }
+
     @Override
     public String toString() {
-        return "General{" + "personal=" + personal + ", address=" + address + ", education=" + education + ", biography=" + biography + '}';
+        return "Specialist{" + "personal=" + personal + ", address=" + address + ", education=" + education + ", biography=" + biography + ", specialization=" + specialization + '}';
     }
-    
     
     
 }
