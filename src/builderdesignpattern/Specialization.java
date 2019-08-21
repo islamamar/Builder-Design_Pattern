@@ -9,6 +9,6 @@ package builderdesignpattern;
  *
  * @author 123456789
  */
-public class general {
+public class Specialization {
     
 }

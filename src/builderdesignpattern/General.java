@@ -9,7 +9,6 @@ package builderdesignpattern;
  *
  * @author 123456789
  */
-public class Personal { 
-    
+public class General {
     
 }

@@ -9,6 +9,31 @@ package builderdesignpattern;
  *
  * @author 123456789
  */
-public class SpecialistBuilder {
+public class SpecialistBuilder  implements Builder { 
+     private Personal personal;
+    private Address address;
+    private Education education ; 
+    private Biography biography ; 
+
+    @Override
+    public void setPerson(Personal personal) {       
+        this.personal=personal ; 
+    }
+
+    @Override
+    public void setAddress(Address address) {    
+     this.address = address; 
+    }
+
+    @Override
+    public void setEducation(Education education) {     
+      this.education = education ; 
+    }
+
+    @Override
+    public void setBiography(Biography biography) {
+       this.biography= biography;  //To change body of generated methods, choose Tools | Templates.
+    }
+    
     
 }
