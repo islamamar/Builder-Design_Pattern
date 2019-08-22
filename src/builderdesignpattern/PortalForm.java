@@ -16,7 +16,47 @@ public class PortalForm extends javax.swing.JFrame {
      */
     public PortalForm() {
         initComponents();
-    }
+    }   
+    
+    // insert newdentist information 
+     public void InsertNewDentist()
+     { 
+         String FristName = firstnametext.getText() ; 
+         String LastName = lastnametext.getText();
+         String EmailAddress =EmailAddresstext.getText(); 
+         String webiste = websitetext.getText(); 
+          int phone = Integer.parseInt(phonetext.getText());
+         
+     }  
+     // insert Biography information 
+     public void InsertBiography()
+     {
+         int  LicenseCountry = Integer.parseInt(licensecountrytext.getText());  
+         int LicenseNumber =  Integer.parseInt(licensenumbertext.getText())  ; 
+         int PracticeYear=  Integer.parseInt(practiceyeartext.getText()) ; 
+         String gender = gendertext.getText(); 
+         
+         
+     } 
+     public void InsertEducation()
+     { 
+         String degree = degreestext.getText(); 
+         String major = majortext.getText(); 
+         String school= schooltext.getText() ; 
+         String year = yeartext.getText(); 
+        
+     } 
+     public void InsertAddress() 
+     {
+         String Coutry = countrytext.getText(); 
+         String City = citytext.getText(); 
+         String State = statetext.getText(); 
+         String Postcode = postcodetext.getText() ; 
+     }
+    
+   
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -64,12 +104,13 @@ public class PortalForm extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
+        countrytext = new javax.swing.JTextField();
+        citytext = new javax.swing.JTextField();
+        statetext = new javax.swing.JTextField();
+        postcodetext = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jCheckBox1 = new javax.swing.JCheckBox();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -168,10 +209,10 @@ public class PortalForm extends javax.swing.JFrame {
 
         jButton2.setText("Add More");
         jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, -1, -1));
-        jPanel4.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 36, 160, -1));
-        jPanel4.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 74, 160, -1));
-        jPanel4.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, 160, -1));
-        jPanel4.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 70, 160, -1));
+        jPanel4.add(countrytext, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 36, 160, -1));
+        jPanel4.add(citytext, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 74, 160, -1));
+        jPanel4.add(statetext, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, 160, -1));
+        jPanel4.add(postcodetext, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 70, 160, -1));
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 450, 620, 130));
 
@@ -181,7 +222,15 @@ public class PortalForm extends javax.swing.JFrame {
         jCheckBox1.setText("is Specialist");
         jPanel5.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 41, -1, -1));
 
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 590, 630, -1));
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 590, 630, 80));
+
+        jButton3.setText("Save");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 680, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -189,6 +238,14 @@ public class PortalForm extends javax.swing.JFrame {
     private void schooltextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_schooltextActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_schooltextActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:  
+        
+        
+        
+         
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -227,11 +284,14 @@ public class PortalForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField EmailAddresstext;
+    private javax.swing.JTextField citytext;
+    private javax.swing.JTextField countrytext;
     private javax.swing.JTextField degreestext;
     private javax.swing.JTextField firstnametext;
     private javax.swing.JTextField gendertext;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -256,17 +316,15 @@ public class PortalForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField lastnametext;
     private javax.swing.JTextField licensecountrytext;
     private javax.swing.JTextField licensenumbertext;
     private javax.swing.JTextField majortext;
     private javax.swing.JTextField phonetext;
+    private javax.swing.JTextField postcodetext;
     private javax.swing.JTextField practiceyeartext;
     private javax.swing.JTextField schooltext;
+    private javax.swing.JTextField statetext;
     private javax.swing.JTextField websitetext;
     private javax.swing.JTextField yeartext;
     // End of variables declaration//GEN-END:variables
