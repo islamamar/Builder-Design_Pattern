@@ -14,5 +14,6 @@ public interface Builder {
     void setAddress(Address address);
     void setEducation(Education education);
     void setBiography(Biography biography);
+    void Specialization(Specialization spicaialization); 
     
 }

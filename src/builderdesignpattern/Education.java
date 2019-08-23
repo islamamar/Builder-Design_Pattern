@@ -13,7 +13,24 @@ public class Education {
     private String Degree ; 
     private String Major; 
     private String school; 
-    private int  year; 
+    private int  year;
+    
+        String Seconddegree ; 
+         String secondMajor; 
+        String  secondSchool ; 
+         int  secondYear ; 
+  
+
+    public Education(String Degree, String Major, String school, int year, String Seconddegree, String secondMajor, String secondSchool, int secondYear) {
+        this.Degree = Degree;
+        this.Major = Major;
+        this.school = school;
+        this.year = year;
+        this.Seconddegree = Seconddegree;
+        this.secondMajor = secondMajor;
+        this.secondSchool = secondSchool;
+        this.secondYear = secondYear;
+    }
 
     public Education(String Degree, String Major, String school, int year) {
         this.Degree = Degree;
@@ -36,7 +53,23 @@ public class Education {
 
     public int getYear() {
         return year;
+    } 
+      public String getSeconddegree() {
+        return Seconddegree;
     }
+
+    public String getSecondMajor() {
+        return secondMajor;
+    }
+
+    public String getSecondSchool() {
+        return secondSchool;
+    }
+
+    public int getSecondYear() {
+        return secondYear;
+    }
+     
     
     
     

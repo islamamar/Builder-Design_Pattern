@@ -14,9 +14,9 @@ public class Personal {
      private String LastName; 
      private String EmailAddress; 
      private String WebSite; 
-     private String PhoneNumber; 
+     private int PhoneNumber; 
 
-    public Personal(String FirstName, String LastName, String EmailAddress, String WebSite, String PhoneNumber) {
+    public Personal(String FirstName, String LastName, String EmailAddress, String WebSite, int PhoneNumber) {
         this.FirstName = FirstName;
         this.LastName = LastName;
         this.EmailAddress = EmailAddress;
@@ -40,7 +40,7 @@ public class Personal {
         return WebSite;
     }
 
-    public String getPhoneNumber() {
+    public int getPhoneNumber() {
         return PhoneNumber;
     }
     

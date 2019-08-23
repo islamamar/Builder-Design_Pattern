@@ -35,12 +35,17 @@ public class SpecialistBuilder  implements Builder {
     public void setBiography(Biography biography) {
        this.biography= biography;  //To change body of generated methods, choose Tools | Templates.
     }
-      public void setSpecialization(Specialization specialization) {  
-          this.specialization = specialization ; 
-      }   
+    
       
        public Specialist getResult() {
         return new Specialist(personal, address, education, biography,specialization);
     }
+
+    @Override
+    public void Specialization(builderdesignpattern.Specialization specialization) {
+       this.specialization = specialization ;
+    }
+
+    
     
 }

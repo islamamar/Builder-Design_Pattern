@@ -3,7 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/src/builderdesignpattern/BuilderDesignPattern.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/Builder.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/AdressForm.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/BuilderDesignPattern.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/PreviewForm.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/Personal.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/PreviewForms.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/Director.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/Specialist.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/Biography.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/Education.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/GeneralBuilder.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/Address.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/EducationForm.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/General.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/PortalForm.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/SpecialistBuilder.java</file>
+            <file>file:/C:/Users/123456789/Documents/NetBeansProjects/BuilderDesignPattern/Builder-Design_Pattern/src/builderdesignpattern/Specialization.java</file>
         </group>
     </open-files>
 </project-private>

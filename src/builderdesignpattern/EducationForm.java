@@ -14,8 +14,37 @@ public class EducationForm extends javax.swing.JFrame {
     /**
      * Creates new form EducationForm
      */
+     String seconddegree ;
+        String secondmajor ;
+        String secondSchool;
+        String secondyear ;
     public EducationForm() {
         initComponents();
+    
+    } 
+
+    public String getSeconddegree() {
+        return seconddegree;
+    }
+
+    public String getSecondmajor() {
+        return secondmajor;
+    }
+
+    public String getSecondSchool() {
+        return secondSchool;
+    }
+
+    public String getSecondyear() {
+        return secondyear;
+    }
+    
+    public void insertdata()
+    {
+         seconddegree = degreetext.getText(); 
+         secondmajor = majortext.getText()  ; 
+         secondSchool = schooltext.getText(); 
+         secondyear = yeartext.getText(); 
     }
 
     /**
@@ -93,6 +122,11 @@ public class EducationForm extends javax.swing.JFrame {
         );
 
         svae.setText("Save");
+        svae.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                svaeActionPerformed(evt);
+            }
+        });
 
         Back.setText("Back");
         Back.addActionListener(new java.awt.event.ActionListener() {
@@ -136,6 +170,16 @@ public class EducationForm extends javax.swing.JFrame {
         new PortalForm().setVisible(true);
     }//GEN-LAST:event_BackActionPerformed
 
+    private void svaeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_svaeActionPerformed
+        // TODO add your handling code here:
+            insertdata() ; 
+       
+       
+           
+      
+    }//GEN-LAST:event_svaeActionPerformed
+ 
+    
     /**
      * @param args the command line arguments
      */
@@ -168,7 +212,9 @@ public class EducationForm extends javax.swing.JFrame {
             public void run() {
                 new EducationForm().setVisible(true);
             }
-        });
+        });  
+        
+       
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

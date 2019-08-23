@@ -14,6 +14,7 @@ public class GeneralBuilder implements Builder{
     private Address address;
     private Education education ; 
     private Biography biography ; 
+    private Specialization spicaialization; 
    
 
     @Override
@@ -38,5 +39,13 @@ public class GeneralBuilder implements Builder{
    public General getResult() {
         return new General(personal, address, education, biography);
     }
+
+    @Override
+    public void Specialization(builderdesignpattern.Specialization spicaialization) {
+        //To change body of generated methods, choose Tools | Templates.
+          this.spicaialization= spicaialization;
+    }
+
+  
 }
 

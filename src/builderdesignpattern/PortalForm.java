@@ -5,6 +5,10 @@
  */
 package builderdesignpattern;
 
+import java.awt.Color;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+
 /**
  *
  * @author 123456789
@@ -13,47 +17,123 @@ public class PortalForm extends javax.swing.JFrame {
 
     /**
      * Creates new form PortalForm
-     */
+     */  
+   
+     
+    
+         String FristName ;
+         String LastName ;
+         String EmailAddress ;
+         String webiste ;
+         int phone;
+         int  LicenseCountry;
+         int LicenseNumber ;
+         int PracticeYear;  
+         String gender;          
+         String degree; 
+         String major ; 
+         String school ; 
+         int  year ; 
+         String Coutry; 
+         String City ; 
+         String State; 
+         String Postcode  ; 
+         
+         String Seconddegree ; 
+         String secondMajor; 
+        String  secondSchool ; 
+        int  secondYear ; 
+        
+        String seocndcountry  ; 
+        String secondCity ; 
+        String secondState ; 
+        String secondPostCode; 
+         String   specializationArea; 
+         int   startYear ; 
+        
+         
+         
     public PortalForm() {
         initComponents();
-    }   
+        
+       
+        
+    }  
+
+    public PortalForm(String FristName, String LastName, String EmailAddress, String webiste, int phone, int LicenseCountry, int LicenseNumber, int PracticeYear, String gender, String degree, String major, String school, int year, String Coutry, String City, String Postcode, String Seconddegree, String secondMajor, String secondSchool, int secondYear, String seocndcountry, String secondCity, String secondState, String secondPostCode, String specializationArea, int startYear) {
+        this.FristName = FristName;
+        this.LastName = LastName;
+        this.EmailAddress = EmailAddress;
+        this.webiste = webiste;
+        this.phone = phone;
+        this.LicenseCountry = LicenseCountry;
+        this.LicenseNumber = LicenseNumber;
+        this.PracticeYear = PracticeYear;
+        this.gender = gender;
+        this.degree = degree;
+        this.major = major;
+        this.school = school;
+        this.year = year;
+        this.Coutry = Coutry;
+        this.City = City;
+        this.Postcode = Postcode;
+        this.Seconddegree = Seconddegree;
+        this.secondMajor = secondMajor;
+        this.secondSchool = secondSchool;
+        this.secondYear = secondYear;
+        this.seocndcountry = seocndcountry;
+        this.secondCity = secondCity;
+        this.secondState = secondState;
+        this.secondPostCode = secondPostCode;
+        this.specializationArea = specializationArea;
+        this.startYear = startYear;
+    }
+      
     
     // insert newdentist information 
      public void InsertNewDentist()
      { 
-         String FristName = firstnametext.getText() ; 
-         String LastName = lastnametext.getText();
-         String EmailAddress =EmailAddresstext.getText(); 
-         String webiste = websitetext.getText(); 
-          int phone = Integer.parseInt(phonetext.getText());
+          FristName = firstnametext.getText() ; 
+          LastName = lastnametext.getText();
+          EmailAddress =EmailAddresstext.getText(); 
+          webiste = websitetext.getText(); 
+           phone = Integer.parseInt(phonetext.getText());
          
      }  
      // insert Biography information 
      public void InsertBiography()
      {
-         int  LicenseCountry = Integer.parseInt(licensecountrytext.getText());  
-         int LicenseNumber =  Integer.parseInt(licensenumbertext.getText())  ; 
-         int PracticeYear=  Integer.parseInt(practiceyeartext.getText()) ; 
-         String gender = gendertext.getText(); 
+           LicenseCountry = Integer.parseInt(licensecountrytext.getText());  
+          LicenseNumber =  Integer.parseInt(licensenumbertext.getText())  ; 
+          PracticeYear=  Integer.parseInt(practiceyeartext.getText()) ; 
+          gender = gendertext.getText(); 
          
          
      } 
      public void InsertEducation()
      { 
-         String degree = degreestext.getText(); 
-         String major = majortext.getText(); 
-         String school= schooltext.getText() ; 
-         String year = yeartext.getText(); 
+          degree = degreestext.getText(); 
+          major = majortext.getText(); 
+          school= schooltext.getText() ; 
+          year = Integer.parseInt(yeartext.getText()); 
         
      } 
      public void InsertAddress() 
      {
-         String Coutry = countrytext.getText(); 
-         String City = citytext.getText(); 
-         String State = statetext.getText(); 
-         String Postcode = postcodetext.getText() ; 
+          Coutry = countrytext.getText(); 
+          City = citytext.getText(); 
+          State = statetext.getText(); 
+          Postcode = postcodetext.getText() ; 
      }
+     
     
+     
+     
+
+    @Override
+    public String toString() {
+        return "PortalForm{" + "FristName=" + FristName + ", LastName=" + LastName + ", EmailAddress=" + EmailAddress + ", webiste=" + webiste + ", phone=" + phone + ", LicenseCountry=" + LicenseCountry + ", LicenseNumber=" + LicenseNumber + ", PracticeYear=" + PracticeYear + ", gender=" + gender + ", degree=" + degree + ", major=" + major + ", year=" + year + ", Coutry=" + Coutry + ", City=" + City + ", State=" + State + ", Postcode=" + Postcode + ", Seconddegree=" + Seconddegree + ", secondMajor=" + secondMajor + ", secondSchool=" + secondSchool + ", secondYear=" + secondYear + ", seocndcountry=" + seocndcountry + ", secondCity=" + secondCity + ", secondState=" + secondState + ", secondPostCode=" + secondPostCode + '}';
+    }
    
     
     
@@ -109,7 +189,7 @@ public class PortalForm extends javax.swing.JFrame {
         statetext = new javax.swing.JTextField();
         postcodetext = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        SpecailistCheckbox = new javax.swing.JCheckBox();
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -156,10 +236,10 @@ public class PortalForm extends javax.swing.JFrame {
         jPanel2.add(practiceyeartext, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 103, 112, -1));
 
         jLabel9.setText("Gender");
-        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(351, 56, -1, -1));
-        jPanel2.add(gendertext, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 53, 150, -1));
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, -1, -1));
+        jPanel2.add(gendertext, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 150, -1));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 620, -1));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 10, 610, 130));
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Education"));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -188,9 +268,14 @@ public class PortalForm extends javax.swing.JFrame {
         jPanel3.add(yeartext, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 152, -1));
 
         jButton1.setText("Add More");
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 110, -1, -1));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 110, -1, -1));
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 620, 170));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 620, 170));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Address"));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -208,21 +293,31 @@ public class PortalForm extends javax.swing.JFrame {
         jPanel4.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, -1, -1));
 
         jButton2.setText("Add More");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel4.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, -1, -1));
         jPanel4.add(countrytext, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 36, 160, -1));
         jPanel4.add(citytext, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 74, 160, -1));
         jPanel4.add(statetext, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, 160, -1));
         jPanel4.add(postcodetext, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 70, 160, -1));
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 450, 620, 130));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 170, 620, 130));
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Speciality"));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jCheckBox1.setText("is Specialist");
-        jPanel5.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 41, -1, -1));
+        SpecailistCheckbox.setText("is Specialist");
+        SpecailistCheckbox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SpecailistCheckboxActionPerformed(evt);
+            }
+        });
+        jPanel5.add(SpecailistCheckbox, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 41, -1, -1));
 
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 590, 630, 80));
+        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 630, 80));
 
         jButton3.setText("Save");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -230,7 +325,7 @@ public class PortalForm extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 680, -1, -1));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 370, 90, 20));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -241,11 +336,104 @@ public class PortalForm extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:  
+        InsertNewDentist();
+        InsertBiography();
+        InsertEducation();
+        InsertAddress() ;  
+      new PreviewForm(FristName, LastName, EmailAddress, webiste, phone, LicenseCountry, LicenseNumber, PracticeYear, gender, degree, major, school, year, Coutry, City,State, Postcode, Seconddegree, secondMajor, secondSchool, secondYear, seocndcountry, secondCity, secondState, secondPostCode, specializationArea, startYear).setVisible(true);
+       
         
+        
+      //  System.out.println(toString());
         
         
          
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here: 
+//        new EducationForm().setVisible(true);
+            JTextField degreeinput = new JTextField();
+             JTextField majorinput = new JTextField(); 
+              JTextField schoolinput = new JTextField(); 
+               JTextField yearinput = new JTextField(); 
+             Object[] fields ={
+                 "Degrees ", degreeinput, 
+                   "Major", majorinput,
+                     "School", schoolinput,
+                       "Year", yearinput,
+             };
+             int dialog= JOptionPane.showConfirmDialog(null, fields, "Education", JOptionPane.CANCEL_OPTION) ; 
+            
+             
+             
+             if(JOptionPane.OK_OPTION == dialog)
+             {
+                this.Seconddegree=degreeinput.getText(); 
+                this.secondMajor = majorinput.getText(); 
+                this.secondSchool= schoolinput.getText();
+                this.secondYear= Integer.parseInt(yearinput.getText()) ;  
+                
+             }
+             
+
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        
+         JTextField countryinput = new JTextField();
+             JTextField Cityinput = new JTextField(); 
+              JTextField Stateinput = new JTextField(); 
+               JTextField Postcodeinput = new JTextField(); 
+             Object[] fields ={
+                 "Country ", countryinput, 
+                   "City", Cityinput,
+                     "State", Stateinput,
+                       "PostCode", Postcodeinput,
+             };
+             int dialog= JOptionPane.showConfirmDialog(null, fields, "Address", JOptionPane.CANCEL_OPTION) ; 
+            
+             
+       
+             
+             if(JOptionPane.OK_OPTION == dialog)
+             {
+                this.seocndcountry=countryinput.getText(); 
+                this.secondCity = Cityinput.getText(); 
+                this.secondState= Stateinput.getText();
+                this.secondPostCode= Postcodeinput.getText();  
+                
+             }
+       
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void SpecailistCheckboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SpecailistCheckboxActionPerformed
+        // TODO add your handling code here: 
+        if (SpecailistCheckbox.isSelected())
+        {
+              JTextField specializationAreaInput = new JTextField();
+             JTextField startYearInput = new JTextField(); 
+             
+             Object[] fields ={
+                 "Area of Specialization ", specializationAreaInput, 
+                   "Start Year", startYearInput,
+                    
+             };
+             int dialog= JOptionPane.showConfirmDialog(null, fields, "Address", JOptionPane.CANCEL_OPTION) ; 
+            
+             
+       
+             
+             if(JOptionPane.OK_OPTION == dialog)
+             {
+               this.specializationArea= specializationAreaInput.getText(); 
+               this.startYear = Integer.parseInt(startYearInput.getText());
+                
+             }
+        }
+           
+    }//GEN-LAST:event_SpecailistCheckboxActionPerformed
 
     /**
      * @param args the command line arguments
@@ -284,6 +472,7 @@ public class PortalForm extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField EmailAddresstext;
+    private javax.swing.JCheckBox SpecailistCheckbox;
     private javax.swing.JTextField citytext;
     private javax.swing.JTextField countrytext;
     private javax.swing.JTextField degreestext;
@@ -292,7 +481,6 @@ public class PortalForm extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
